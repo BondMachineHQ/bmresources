@@ -1,6 +1,7 @@
 {
   "Params": {
-    "expprec": "20"
+    "expprec": "20",
+    "multop": "multf"
   },
   "Pruned": [],
   "Collapsed": [],
