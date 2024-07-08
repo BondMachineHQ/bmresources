@@ -1,7 +1,7 @@
 set ip_directory "ip_repo"
 set project_name "placeholderproject"
 set ip_name "bondmachineip"
-set part_number "xc7z020clg484-1"
+set part_number "xc7z010clg400-1"
 set fp [open "aux/axiregnum.txt" r]
 set regs [read $fp]
 close $fp
