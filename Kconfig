@@ -20,6 +20,13 @@ menu "General"
 		default ""
 		help
 			Write the pin mapping file name
+	
+	config BOARD_NUM
+		int "Board number"
+		depends on GENERAL_TYPE_BOARD
+		default 0
+		help
+			If you have more than one board, write the board number here. It will be used program the specific board
 endmenu
 
 menu "BondMachine configuration"
@@ -175,6 +182,19 @@ config UART_MAPFILE
     default ""
     help
       UART PIM mapping file
+
+config BOARD_SLOW
+    bool "Slow board"
+    default n
+    help
+      Slow board
+
+config BOARD_SLOW_FACTOR
+    int "Slow board factor"
+    depends on BOARD_SLOW
+    default 23
+    help
+      Slow board factor
 
 endmenu
 
