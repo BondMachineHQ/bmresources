@@ -20,6 +20,7 @@ endgroup
 ipx::edit_ip_in_project -upgrade true -name ${ip_name}_v1_0_project -directory ${project_dir}/${project_name}.tmp/${ip_name}_v1_0_project ${ip_directory}/${ip_name}_1_0/component.xml
 update_compile_order -fileset sources_1
 add_files -norecurse -scan_for_includes ${ip_directory}/${ip_name}_1_0/hdl/bondmachine.sv
+update_compile_order -fileset sources_1
 add_files -norecurse -scan_for_includes ${ip_directory}/${ip_name}_1_0/hdl/bondmachine.vhd
 update_compile_order -fileset sources_1
 ipx::open_ipxact_file ${ip_directory}/${ip_name}_1_0/component.xml
